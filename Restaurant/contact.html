@@ -7,7 +7,10 @@
     <title>Contact</title>
 </head>
 <body>
-    <header>Restaurant Name</header>
+    <header>
+        <h1>Olivia's Burger Joint</h1>
+    </header>
+
     <nav>
         <a href="home.html">Home</a>
         <a href="menu.html">Menu</a>
@@ -23,6 +26,59 @@
         radio buttons- have you been to the restaurant
         checkbox- Best day to contact you
         Send Request/Sumbit button at the end -->
+        <form action="submit.html" method:"POST">
+            <label for="customerName">Name:</label>
+            <input type="text" id="customerName" name="customerName">
+            <br/>
+            <label for="customerEmail">Email</label>
+            <input type="text" id="customerEmail" name="customerEmail">
+            <br/>
+            <label for="customerName">Name:</label>
+            <input type="text" id="customerName" name="customerName">
+            <br/>
+
+            <label for="inquiry">Reason for Inquiry:</label>
+            <select id="inquiry">
+                <option value="default" selected>Catering</option>
+                <option value="morning">Private Party</option>
+                <option value="afternoon">Feedback</option>
+                <option value="evening">Other</option>
+            </select>
+            <br />
+
+            <label for="info">Additional Information</label>
+            <textarea id="info" name="info"></textarea>
+            <br/>
+
+            <!-- <fieldset> -->
+                <legend>Have you been to the restaurant?</legend>
+                <input type="radio" id="yes" name="yesOrNo" value="yes">
+                <label for="yes">Yes</label>
+                <!-- <br/> -->
+                <input type="radio" id="no" name="yesOrNo" value="no">
+                <label for="no">No</label>
+                <br/>
+            <!-- </fieldset> -->
+
+            <legend>Best days to contact you:</legend>
+            <input type="checkbox" id="monday" name="weekday" value="m">
+            <label for="m">M</label>
+
+            <input type="checkbox" id="tuesday" name="weekday" value="tu">
+            <label for="tu">Tu</label>
+
+            <input type="checkbox" id="wednesday" name="weekday" value="w">
+            <label for="w">W</label>
+
+            <input type="checkbox" id="thursday" name="weekday" value="th">
+            <label for="th">Th</label>
+
+            <input type="checkbox" id="friday" name="weekday" value="f">
+            <label for="f">F</label>
+            <br/>
+
+            <input type="submit" name="sumbit" value="Submit">
+        </form>
     </div>
 
     <footer>
