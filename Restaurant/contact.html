@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="assets/CSS/restaurantStyles.css" type="text/css" />
 
     <style>
-    
+        .requiredInfo{
+            font-weight: bold;
+        }
     </style>
 </head>
 
@@ -27,26 +29,18 @@
     </nav>
 
     <div class="container">
-        <!--Form from Bootstrap
-        Ask for input for person's name, email, phone, 
-        reason for inquiry (drop-down with catering as default,
-        private party, feedback, or other
-        textbox for additional information
-        radio buttons- have you been to the restaurant
-        checkbox- Best day to contact you
-        Send Request/Sumbit button at the end -->
         <form action="submit.html" method:"POST">
-            <label for="customerName">Name:</label>
+            <label class="requiredInfo" for="customerName">Name:</label>
             <input type="text" id="customerName" name="customerName">
             <br/>
-            <label for="customerEmail">Email:</label>
+            <label class="requiredInfo" for="customerEmail">Email:</label>
             <input type="text" id="customerEmail" name="customerEmail">
             <br/>
-            <label for="customerPhone">Phone:</label>
+            <label class="requiredInfo" for="customerPhone">Phone:</label>
             <input type="text" id="customerPhone" name="customerPhone">
             <br/>
 
-            <label for="inquiry">Reason for Inquiry:</label>
+            <label class="requiredInfo" for="inquiry">Reason for Inquiry:</label>
             <select id="inquiry">
                 <option value="default" selected>Catering</option>
                 <option value="morning">Private Party</option>
@@ -69,7 +63,7 @@
                 <br/>
             <!-- </fieldset> -->
 
-            <legend>Best days to contact you:</legend>
+            <legend class="requiredInfo">Best days to contact you:</legend>
             <input type="checkbox" id="monday" name="weekday" value="m">
             <label for="m">M</label>
 
