@@ -1,3 +1,5 @@
+document.getElementById("results").style.display = "none";
+
 function rollDice() {
     return Math.floor(Math.random() * 6) + 1;
 }
@@ -6,10 +8,24 @@ function rollDice() {
 // }
 
 function playGame() {
-    // var startBet = Number(document.forms["luckySevensGame"]["startingBet"].value);
-    // console.log(startBet)
-    var startBet = document.forms["luckySevensGame"]["userStartingBet"].value;
+    var startBet = document.getElementById("userStartingBet").value;
+
+    // var startBet = document.forms["luckySevensGame"]["userStartingBet"].value;
     console.log(startBet);
-    // document.getElementById("startingBet").innerText = startBet
+    // alert(startBet);
+    // document.getElementById("startingBet").innerText = startBet;
+    // document.getElementById("totalRolls").innerText = startBet;
+    // document.getElementById("highestMoneyWon").innerText = startBet;
+    // document.getElementById("rollCount").innerText = startBet;
+    // return false;
+
+    document.getElementById("results").style.display="block";
 }
 
+function showResults() {
+
+}
+
+// function hideResults() {
+//     document.getElementById("results").style.display = "none";
+// }

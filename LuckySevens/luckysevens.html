@@ -33,12 +33,12 @@
                         <span class="input-group-text">.00</span>
                     </div>
                 </div>
-                <button type="submit" onclick="playGame()" class="btn btn-secondary mb-2">Play</button>
+                <button type="submit" class="btn btn-secondary mb-2">Play</button>
               </form>
       
     </div>
 
-    <div class="container">
+    <div class="container" id="results">
         <center>
             <h1>Results</h1>
         </center>
@@ -47,22 +47,22 @@
             <tbody>
                 <tr>
                 <td>Starting Bet</td>
-                <td id="startingBet"></td>
+                <td><span id="startingBet"></span></td>
                 </tr>
 
                 <tr>
                 <td>Total Rolls Before Going Broke</td>
-                <td></td>
+                <td><span id="totalRolls"></span></td>
                 </tr>
 
                 <tr>
                 <td>Highest Amount Won</td>
-                <td></td>
+                <td><span id="highestMoneyWon"></span></td>
                 </tr>
 
                 <tr>
                 <td>Roll Count at Highest Amount Won</td>
-                <td></td>
+                <td><span id="rollCount"></span></td>
                 </tr>
             </tbody>
         </table>
