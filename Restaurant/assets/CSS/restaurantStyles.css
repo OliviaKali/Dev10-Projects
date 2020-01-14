@@ -1,12 +1,12 @@
 body {
-     margin: 20px;
-    /* background: url("../images/food.png"); */
+    background: url("../images/food.png");
     min-height: 400px;
     margin-bottom: 100px;
     /* clear: both; */
 }
 
 h1 {
+    margin: 20px;
     font-family: 'Nova Cut', cursive;
 }
 
@@ -23,6 +23,7 @@ footer {
 }
 
 nav {
+    margin: 20px;
     border-top: thin orange solid;
     border-bottom: thin orange solid;
     padding-top: 12px;
