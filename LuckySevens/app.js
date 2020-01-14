@@ -12,6 +12,10 @@ var totalRolls = 0;
 var highestWon = 0;
 var rollCountHighestWon = 0;
 
+function resetGame() {
+
+}
+
 function playGame() {
     startBet = document.getElementById("userStartingBet").value;
     bet = startBet
@@ -33,6 +37,10 @@ function playGame() {
             }
             else {
                 bet += 4
+                if (bet > highestWon) {
+                    highestWon = bet
+                    rollCountHighestWon = totalRolls;
+                }
             }
         }
     }
@@ -42,19 +50,7 @@ function playGame() {
     document.getElementById("playButton").textContent ="Play Again";
     document.getElementById("startingBet").innerHTML = "$" + startBet + ".00";
     document.getElementById("totalRolls").innerHTML = totalRolls;
-    document.getElementById("highestMoneyWon").innerHTML = "$" +
+    document.getElementById("highestMoneyWon").innerHTML = "$" + highestWon +".00"
+    document.getElementById("rollCount").innerHTML = rollCountHighestWon
     return false;
 }
-
-// var startBet = document.getElementById('userStartingBet');
-// var bet;
-// var dice1;
-// var dice2;
-// var diceSum;
-// var totalRolls= 0;
-// var highestWon = 0;
-// var rollCountHighestWon = 0;
-
-// function playGame() {
-//     document.getElementById("results").style.display ="block";
-// }
