@@ -33,7 +33,7 @@
     
     <div class="container">
 
-        <form>
+        <form name="contactForm" onsubmit="submitForm()">
             <div class="form-group row">
                 <label for="colFormLabel" class="col-sm-3 col-form-label requiredInfo">Name</label>
                 <div class="col-sm-9">
@@ -78,29 +78,29 @@
             </div>
 
             <div class="form-group row">
-                <div class="col-sm-3 requiredInfo">Best days to contact you?</div>
+                <div class="col-sm-3">Best days to contact you?</div>
                 <div class="col-sm-9">
                     <div class="form-check">
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input requiredInfo" type="checkbox" id="inlineCheckbox1" value="m">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="m">
                             <label class="form-check-label" for="inlineCheckbox1">M</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input requiredInfo" type="checkbox" id="inlineCheckbox2"
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
                                 value="tu">
                             <label class="form-check-label" for="inlineCheckbox2">Tu</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input requiredInfo" type="checkbox" id="inlineCheckbox3" value="w">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="w">
                             <label class="form-check-label" for="inlineCheckbox3">W</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input requiredInfo" type="checkbox" id="inlineCheckbox4"
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4"
                                 value="th">
                             <label class="form-check-label" for="inlineCheckbox4">Th</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input requiredInfo" type="checkbox" id="inlineCheckbox5" value="f">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="f">
                             <label class="form-check-label" for="inlineCheckbox5">F</label>
                         </div>
                     </div>
@@ -123,7 +123,9 @@
                 </div>
             </div>
 
-            <input class="btn" type="submit" name="sumbit" value="Send Request">
+           <input class="btn" 
+           onclick="submitForm()" 
+           type="submit" name="sumbit" value="Send Request">
 
         </form>
 
@@ -133,6 +135,8 @@
         <p>99 Broadway, Bayonne, NJ 07002</p>
         <p>201-437-9999</p>
     </footer>
+
+    <script type="text/JavaScript" src="assets/JavaScript/app.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
