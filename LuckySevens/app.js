@@ -13,20 +13,18 @@ var highestWon = 0;
 var rollCountHighestWon = 0;
 
 function playGame() {
-    var startBet = document.getElementById("userStartingBet").value;
-    var bet = startBet
- 
-    // if (bet > 0) {
-    //     console.log(startBet);
-    // }
+    startBet = document.getElementById("userStartingBet").value;
+    bet = startBet
+    console.log(bet)
+
     if (bet <= 0) {
         alert("Please enter starting bet greater than $0")
     }
     else {
-        var dice1 = rollDice();
-        var dice2 = rollDice();
-        var sum = dice1 + dice2;
-        console.log(sum);
+        dice1 = rollDice();
+        dice2 = rollDice();
+        diceSum = dice1 + dice2;
+        console.log(diceSum);
     }
     return false;
 }
