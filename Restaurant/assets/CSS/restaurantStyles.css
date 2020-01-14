@@ -22,12 +22,16 @@ footer {
 }
 
 nav {
-    margin: 20px;
+    margin-left: 20px;
     border-top: thin orange solid;
     border-bottom: thin orange solid;
     padding-top: 12px;
     padding-bottom: 12px;
     margin-bottom: 10px;
+}
+
+.activeColor {
+    background-color: orange;
 }
 
 .btn {
