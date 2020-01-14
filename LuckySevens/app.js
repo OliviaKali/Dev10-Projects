@@ -17,7 +17,7 @@ function playGame() {
     console.log(bet)
 
     if (bet <= 0) {
-        alert("Please enter starting bet greater than $0")
+        alert("Please enter starting bet that is greater than $0")
     }
     else {
         while (bet > 0) {
