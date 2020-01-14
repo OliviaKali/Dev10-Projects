@@ -41,7 +41,7 @@
     </div>
 
     <div class="container">
-        <form name="luckySevensGame" onsubmit="playGame()">
+        <form name="luckySevensGame" onsubmit="return playGame()">
         <label for="userStartingBet">Starting Bet</label>
         <div class="input-group mb-3">
             <div class="input-group-prepend">
@@ -53,22 +53,20 @@
             </div>
         </div>
         
-            <button type="submit" class="btn btn-secondary">Play</button>
+            <button type="submit" id="playButton" class="btn btn-secondary">Play</button>
      
     </form>
 
     </div>
 
     <div class="container" id="results" style="display:none;">
-     
-           
-     
-
+    
         <table>
             <tbody>
                 <tr>
                     <td>Starting Bet</td>
                     <td><span id="startingBet"></span></td>
+                    <!-- <td id="startingBet"></td> -->
                 </tr>
 
                 <tr>
