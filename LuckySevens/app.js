@@ -26,17 +26,18 @@ function playGame() {
         dice2 = rollDice();
         diceSum = dice1 + dice2;
         console.log(diceSum);
-       }
-        if (diceSum == 7) {
-            bet +=4
-            console.log("equal")
+        totalRolls++;
+        console.log(totalRolls);
+        if (diceSum != 7) {
+            bet -=1
         } 
         else {
-            bet--
-            console.log("not equal") 
-            // if (bet > )
+            bet +=4
         }
     }
+       }
+      
+      
     document.getElementById("results").style.display ="block";
     // document.getElementsById("playButton").innerText ="Play Again";
     // document.getElementsById("startingBet").innerHTML = bet;
