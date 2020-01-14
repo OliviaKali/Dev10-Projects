@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Nova+Cut&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/CSS/restaurantStyles.css" type="text/css" />
 
     <style>
-        .requiredInfo{
+        .requiredInfo {
             font-weight: bold;
         }
     </style>
@@ -23,13 +25,120 @@
     </header>
 
     <nav>
-        <a href="home.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="contact.html">Contact</a>
+        <a class="btn badge-pill" href="home.html">Home</a>
+        <a class="btn badge-pill" href="menu.html">Menu</a>
+        <a class="btn badge-pill" href="contact.html">Contact</a>
     </nav>
 
     <div class="container">
-        <form action="submit.html" method:"POST">
+
+        <form>
+            <div class="form-group row">
+                <label for="colFormLabel" class="col-sm-3 col-form-label">Name</label>
+                <div class="col-sm-9">
+                    <input type="email" class="form-control" id="colFormLabel-name" placeholder="John Smith">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="colFormLabel" class="col-sm-3 col-form-label">Email</label>
+                <div class="col-sm-9">
+                    <input type="email" class="form-control" id="colFormLabel-email" placeholder="name@example.com">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="colFormLabel" class="col-sm-3 col-form-label">Phone</label>
+                <div class="col-sm-9">
+                    <input type="tel" class="form-control" id="colFormLabel-phone" placeholder="555-555-5555">
+                </div>
+            </div>
+
+            <div class="form-group row">
+
+                <label for="exampleFormControlSelect1" class="col-sm-3 col-form-label">Reason for Inquiry:</label>
+
+                <div class="col-sm-9">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option value="default" selected>Catering</option>
+                        <option value="morning">Private Party</option>
+                        <option value="afternoon">Feedback</option>
+                        <option value="evening">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="colFormLabel" class="col-sm-3 col-form-label">Additional Information</label>
+                <div class="col-sm-9">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Add any Addtional Info here."></textarea>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm-3">Best days to contact you?</div>
+                <div class="col-sm-9">
+                    <div class="form-check">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input requiredInfo" type="checkbox" id="inlineCheckbox1" value="m">
+                            <label class="form-check-label" for="inlineCheckbox1">M</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input requiredInfo" type="checkbox" id="inlineCheckbox2"
+                                value="tu">
+                            <label class="form-check-label" for="inlineCheckbox2">Tu</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input requiredInfo" type="checkbox" id="inlineCheckbox3" value="w">
+                            <label class="form-check-label" for="inlineCheckbox3">W</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input requiredInfo" type="checkbox" id="inlineCheckbox4"
+                                value="th">
+                            <label class="form-check-label" for="inlineCheckbox4">Th</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input requiredInfo" type="checkbox" id="inlineCheckbox5" value="f">
+                            <label class="form-check-label" for="inlineCheckbox5">F</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm-3">Have you been to the restaurant?</div>
+                <div class="col-sm-9">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="yes">
+                        <label class="form-check-label" for="inlineRadio1">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="no">
+                        <label class="form-check-label" for="inlineRadio2">No</label>
+                    </div>
+                </div>
+            </div>
+
+            <input class="btn" type="submit" name="sumbit" value="Send Request">
+
+
+            <!-- 
+              <legend>Have you been to the restaurant?</legend>
+              <input type="radio" id="yes" name="yesOrNo" value="yes">
+              <label for="yes">Yes</label>
+          
+              <input type="radio" id="no" name="yesOrNo" value="no">
+              <label for="no">No</label>
+              <br/> -->
+
+
+        </form>
+
+
+        <!-- <form action="submit.html" method:"POST">
             <label class="requiredInfo" for="customerName">Name:</label>
             <input type="text" id="customerName" name="customerName">
             <br/>
@@ -51,19 +160,19 @@
 
             <label for="info">Additional Information</label>
             <textarea id="info" name="info"></textarea>
-            <br/>
+            <br/> -->
 
-            <!-- <fieldset> -->
-                <legend>Have you been to the restaurant?</legend>
+
+        <!-- <legend>Have you been to the restaurant?</legend>
                 <input type="radio" id="yes" name="yesOrNo" value="yes">
                 <label for="yes">Yes</label>
-                <!-- <br/> -->
+            
                 <input type="radio" id="no" name="yesOrNo" value="no">
                 <label for="no">No</label>
-                <br/>
-            <!-- </fieldset> -->
+                <br/> -->
 
-            <legend class="requiredInfo">Best days to contact you:</legend>
+
+        <!-- <legend class="requiredInfo">Best days to contact you:</legend>
             <input type="checkbox" id="monday" name="weekday" value="m">
             <label for="m">M</label>
 
@@ -78,25 +187,26 @@
 
             <input type="checkbox" id="friday" name="weekday" value="f">
             <label for="f">F</label>
-            <br/>
+            <br/> -->
 
-            <input type="submit" name="sumbit" value="Submit">
-        </form>
+        <!-- <input type="submit" name="sumbit" value="Submit">
+        </form>  -->
     </div>
 
     <footer>
         <p>99 Broadway, Bayonne, NJ 07002</p>
         <p>201-437-9999</p>
     </footer>
-    
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

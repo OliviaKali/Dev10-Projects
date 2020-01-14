@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Menu</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Nova+Cut&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/CSS/restaurantStyles.css" type="text/css" />
@@ -15,8 +16,37 @@
         body {
             background: url("assets/images/food.png");
         }
+
         .burgerRow {
             text-align: center;
+        }
+
+        /* .sides {
+            display: inline-block
+        }
+
+        .fries {
+            text-align: center;
+        } */
+
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            border: 2px solid black;
+            width: 65%;
+        }
+
+        th,
+        td {
+            padding: 15px;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: lemonchiffon;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: rgb(253, 246, 151);
         }
     </style>
 </head>
@@ -27,9 +57,9 @@
     </header>
 
     <nav>
-        <a href="home.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="contact.html">Contact</a>
+        <a class="btn badge-pill" href="home.html">Home</a>
+        <a class="btn badge-pill" href="menu.html">Menu</a>
+        <a class="btn badge-pill" href="contact.html">Contact</a>
     </nav>
 
     <div class="container">
@@ -63,37 +93,71 @@
         <div class="row burgerRow">
             <div class="col-md-4">
                 <h5>Vegan Burger</h5>
-                <p>A vegan black bean burger patty paired with vegan 
-                    cheddar cheese, lettuce, tomato, pickles, and 
-                    caramelized onions on a potato bun. 
+                <p>A vegan black bean burger patty paired with vegan
+                    cheddar cheese, lettuce, tomato, pickles, and
+                    caramelized onions on a potato bun.
                 </p>
                 <p>$13.95</p>
             </div>
 
             <div class="col-md-4">
                 <h5>Impossible Burger</h5>
-                <p>A plant-based impossible burger patty that tastes like 
-                    beef that comes with lettuce, tomato, and pickles on a 
-                    pretzel bun. 
+                <p>A plant-based impossible burger patty that tastes like
+                    beef that comes with lettuce, tomato, and pickles on a
+                    pretzel bun.
                 </p>
                 <p>$14.95</p>
             </div>
 
             <div class="col-md-4">
                 <h5>Mac'n'CheeseBurger</h5>
-                <p>A beef burger that comes with lettuce, tomato that is 
-                    topped with mac'n'cheese on a sesame seed bun. 
+                <p>A beef burger that comes with lettuce, tomato that is
+                    topped with mac'n'cheese on a sesame seed bun.
                 </p>
                 <p>$12.95</p>
             </div>
-
-            <p>All Burgers come with a side of your choice - salad, fries,
-                curly fries, sweet potato fries...""
-            </p>
         </div>
 
+            <div class="row sides">
+                <div class="col-md-12">
+                    <h5>Sides</h5>
+            <p class="fries">All burgers come with a side of your choice - salad, fries,
+                curly fries, sweet potato fries, or waffle fries.
+            </p>
+            </div>
+        </div>
+        
+
         <table>
-            <!--Table for beverages menu-->
+            <!-- <caption>Beverages</caption> -->
+            <thead>
+                <tr>
+                    <th>Beverages</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Rootbeer Float</td>
+                    <td>$4.00</td>
+                </tr>
+
+                <tr>
+                    <td>Samuel Adams Cherry Wheat</td>
+                    <td>$6.00</td>
+                </tr>
+
+                <tr>
+                    <td>Sparking Water</td>
+                    <td>$3.00</td>
+                </tr>
+
+                <tr>
+                    <td>Lemonade</td>
+                    <td>$3.00</td>
+                </tr>
+            </tbody>
         </table>
     </div>
 
