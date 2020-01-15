@@ -34,14 +34,14 @@ nav {
     background-color: orange;
 }
 
-.btn {
+/* .btn {
     background-color: orange;
     color: #fef9ff; 
     margin: 15px;
     padding: 10px;
-}
+} */
 
-a {
+a:link {
     color: white;
 }
 
