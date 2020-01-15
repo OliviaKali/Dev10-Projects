@@ -41,6 +41,10 @@ nav {
     padding: 10px;
 }
 
+a {
+    color: white;
+}
+
 a:visited {
     color:orangered;
 }
