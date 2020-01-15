@@ -1,6 +1,6 @@
 # Dev10-Projects
 
-<h1>Check out the website featuring Olivia's Burger Joint and Lucky Sevens Game.</h1>
+<h5>Check out the website featuring Olivia's Burger Joint and Lucky Sevens Game.</h5>
 <a href="https://oliviakali.github.io/Dev10-Projects/">Olivia's Dev10 Projects</a>
 
 ## Lucky Sevens
